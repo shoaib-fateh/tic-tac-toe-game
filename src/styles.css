@@ -1,21 +1,75 @@
 body {
     font-family: sans-serif;
     padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.game {
+    display: flex;
+    align-items: center;
 }
 
 .board-row {
     display: flex;
+    justify-content: center;
 }
 
 .square {
     background-color: transparent;
     font-size: 50px;
-    border: .5px solid #000;
-    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     width: 100px;
     height: 100px;
+    color: dodgerblue;
 }
 
-.square:hover {
+.game-info {
+    margin-top: 20px;
+}
+
+.game-info ol {
+    overflow-y: auto;
+    height: 200px;
+}
+
+.game-info ol::-webkit-scrollbar {
+    width: 10px;
+}
+
+.game-info ol::-webkit-scrollbar-thumb {
+    background: dodgerblue;
+    border-radius: 5px;
+}
+
+.game-info ol::-webkit-scrollbar-thumb:hover {
+    background: orangered;
+}
+
+.game-info button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.game-info button:hover {
+    background-color: orangered;
     cursor: pointer;
+}
+
+.status {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: dodgerblue;
 }
