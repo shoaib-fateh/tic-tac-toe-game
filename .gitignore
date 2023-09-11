@@ -1,0 +1,11 @@
+# Ignored directories
+node_modules/
+build/
+.cache/
+
+# Ignored files
+.env
+.DS_Store
+.yarn/
+yarn-error.log
+npm-debug.log*
