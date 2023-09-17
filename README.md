@@ -24,6 +24,8 @@ The application state is managed using the useState React Hook to make it a full
 
 To run this project, first clone the repository, then navigate to the project directory and run `npm install` to install the dependencies. Start the game with `npm start`. 
 
+[Launch App](https://tictac-toe-v2.netlify.app/)
+
 ## Future Enhancements
 
 - Add a feature for the game to be played between a human and a computer.
